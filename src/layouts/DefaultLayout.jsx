@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom"
-import { NavLink, Link } from "react-router-dom";
+
 
 export default function DefaultLayout() {
     return (
         <>
-            <header>
+            {/* <header>
                 <nav className="navbar navbar-expand-sm navbar-light bg-primary">
                     <div className="container-fluid">
                         <NavLink className="navbar-brand" to={'/'}>Homepage</NavLink>
@@ -12,7 +12,7 @@ export default function DefaultLayout() {
                             {/* <div className="navbar-nav">
                                 <NavLink className="nav-link active" aria-current="page" to={'/'}>Home Page</NavLink>
                             </div> */}
-                            <div className="navbar-nav">
+            {/* <div className="navbar-nav">
                                 <NavLink className="nav-link active" aria-current="page" to={'/ChiSiamo'}>Chi siamo</NavLink>
                             </div>
                             <div className="navbar-nav">
@@ -21,11 +21,11 @@ export default function DefaultLayout() {
                         </div>
                     </div>
                 </nav>
-            </header>
+            </header> */}
 
             <Outlet />
 
-            <footer className="py-4 bg-light">
+            {/* <footer className="py-4 bg-light">
                 <div className="container">
                     <div className="row">
                         <div className="col">
@@ -46,7 +46,7 @@ export default function DefaultLayout() {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
         </>
     )
 }
