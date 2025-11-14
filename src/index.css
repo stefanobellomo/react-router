@@ -1,6 +1,15 @@
 @import url(Bootstrap);
 @import url(Bootstrap-icons);
 
+.jumbotron {
+    max-width: 70%;
+}
+
+.welcome {
+    max-width: 30%;
+    font-size: 1.5rem;
+}
+
 .product-card {
     border: 0;
     min-height: 200px;
@@ -9,7 +18,7 @@
 }
 
 .product-image-wrapper {
-    max-width: 50%;
+    max-width: 30%;
     border-radius: 0.5rem;
     overflow: hidden;
 }
