@@ -46,13 +46,15 @@ export default function ChiSiamo() {
         <>
 
             <main>
-                {faqs.map(item => (
-                    <div key={item.id}>
-                        <h4 onClick={() => handleClick(item.id)}>{item.question}</h4>
-                        {item.id === active && <p>{item.answer}</p>}
-                    </div >
-                ))
-                }
+                <div className="faqs container p-3">
+                    {faqs.map(item => (
+                        <div key={item.id}>
+                            <h4 onClick={() => handleClick(item.id)}>{item.question}</h4>
+                            {item.id === active && <p>{item.answer}</p>}
+                        </div >
+                    ))
+                    }
+                </div>
             </main>
 
         </>

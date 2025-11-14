@@ -5,7 +5,7 @@ export default function HomePage() {
         <>
             <main>
 
-                <div>
+                <div className="container">
                     <img src={negozio} alt="Negozio Online" />
                 </div>
 

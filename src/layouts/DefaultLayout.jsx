@@ -35,21 +35,22 @@ export default function DefaultLayout() {
 
             <footer className="py-4 bg-light">
                 <div className="container">
-                    <div className="row">
+                    <div className="row row-cols-4">
                         <div className="col">
-                            <h3>Quick links</h3>
+                            <h3>Social</h3>
                             <ul className="list-unstyled">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/posts">Blog</a></li>
-                                <li><a href="/about">About</a></li>
-                                <li><a href="/contacts">Contacts</a></li>
+                                <li><a href="https://facebook.com" target="_blank" >Facebook</a></li>
+                                <li><a href="https://twitter.com" target="_blank" >Twitter</a></li>
+                                <li><a href="https://instagram.com" target="_blank" >Instagram</a></li>
+                                <li><a href="https://linkedin.com" target="_blank" >LinkedIn</a></li>
                             </ul>
                         </div>
                         <div className="col">
-                            <h3>Company</h3>
+                            <h3>Link alla pagina</h3>
                             <ul className="list-unstyled">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/posts">Blog</a></li>
+                                <li><a href="/prodotti">Prodotti</a></li>
+                                <li><a href="/ChiSiamo">Chi siamo</a></li>
                             </ul>
                         </div>
                     </div>
