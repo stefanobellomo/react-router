@@ -27,8 +27,8 @@ export default function Prodotti() {
 
                     {products.map((product) => (
                         <div key={product.id} className="col">
-                            <div className="card">
-                                <div className="card-image">
+                            <div className="card h-100 product-card">
+                                <div className="product-image-wrapper">
                                     <img src={product.image} alt={product.name} />
                                 </div>
                                 <h4>{product.title}</h4>
