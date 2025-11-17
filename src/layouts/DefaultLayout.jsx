@@ -11,7 +11,7 @@ export default function DefaultLayout() {
                         <NavLink className="navbar-brand" to={'/'}>Homepage</NavLink>
                         <div className="collapse navbar-collapse" id="navbarID">
                             <div className="navbar-nav">
-                                <NavLink className="nav-link active" aria-current="page" to={'/ChiSiamo'}>Chi siamo</NavLink>
+                                <NavLink className="nav-link active" aria-current="page" to={'/chi-siamo'}>Chi siamo</NavLink>
                             </div>
                             <div className="navbar-nav">
                                 <NavLink className="nav-link active" aria-current="page" to={'/Prodotti'}>Prodotti</NavLink>
@@ -50,7 +50,7 @@ export default function DefaultLayout() {
                             <ul className="list-unstyled">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/prodotti">Prodotti</a></li>
-                                <li><a href="/ChiSiamo">Chi siamo</a></li>
+                                <li><a href="/chi-siamo">Chi siamo</a></li>
                             </ul>
                         </div>
                     </div>

@@ -42,7 +42,6 @@ export default function ChiSiamo() {
 
     return (
 
-
         <>
 
             <main>

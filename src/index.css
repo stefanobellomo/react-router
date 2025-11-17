@@ -28,7 +28,7 @@
 }
 
 .product-content {
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .product-image-wrapper img {
@@ -44,6 +44,27 @@
 .error {
     text-align: center;
     margin: 7rem;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: gray;
+}
+
+.price {
+    color: green;
+}
+
+.rating {
+    color: orange;
+}
+
+.btn {
+    max-width: 200px;
 }
 
 @media screen and (max-width: 990px) {
