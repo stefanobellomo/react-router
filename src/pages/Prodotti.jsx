@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 export default function Prodotti() {
 
@@ -41,6 +42,8 @@ export default function Prodotti() {
                                     <span className="bord-card fw-bold">Prezzo: {product.price}$</span>
                                     <span className="bord-card fw-bold py-2">Rate: {product.rating.rate}</span>
                                     <span className="bord-card fw-bold">N. Recensioni: {product.rating.count}</span>
+                                    {/* link per collegarsi alla card del prodotto */}
+                                    <Link to={`/Prodotti/${product.id}`}>Visualizza scheda prodotto</Link>
                                 </div>
                             </div>
                         </div>
