@@ -7,7 +7,7 @@ export default function Prodotto() {
 
     const { id } = useParams()
     const navigate = useNavigate()
-    const [product, setProduct] = useState([])
+    const [product, setProduct] = useState({ rating: {} })
     const nextId = Number(id) + 1
     const prevId = Number(id) - 1
 
@@ -31,13 +31,26 @@ export default function Prodotto() {
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <h1>{product.title}</h1>
-                                <Link className="btn btn-dark" to={`/prodotti`}>Ritorna ai prodotti</Link>
-                                <Link className="btn btn-dark" to={`/prodotti/${prevId}`}>Prodotto precedente</Link>
-                                <Link className="btn btn-dark" to={`/prodotti/${nextId}`}>Prodotto successivo</Link>
+                                <div className="card h-100 product-card d-flex flex-row p-3 gap-3">
+                                    <div className="product-image-wrapper">
+                                        <img src={product.image} alt={product.title} />
+                                    </div>
+                                    <div className="d-flex flex-column product-content">
+                                        <h4>{product.title}</h4>
+                                        <p className="description">
+                                            <span>{product.description}</span>
+                                        </p>
+                                        <span className="bord-card fw-bold py-2">Categoria: {product.category}</span>
+                                        <span className="bord-card fw-bold">Prezzo: {product.price}</span>
+                                        <span className="bord-card fw-bold py-2">Rate: {product.rating.rate}</span>
+                                        <span className="bord-card fw-bold">N. Recensioni: {product.rating.count}</span>
+                                        {/* link per collegarsi alla card del prodotto, alla pagina precedente e successiva */}
+                                        <Link className="btn btn-dark mt-3" to={`/prodotti`}>Ritorna ai prodotti</Link>
+                                        <Link className="btn btn-dark my-2" to={`/prodotti/${prevId}`}>Prodotto precedente</Link>
+                                        <Link className="btn btn-dark" to={`/prodotti/${nextId}`}>Prodotto successivo</Link>
+                                    </div>
+                                </div>
                             </div>
-
-
                         </div>
                     </div>
                 </section>
