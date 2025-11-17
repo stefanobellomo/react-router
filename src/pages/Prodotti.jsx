@@ -24,7 +24,7 @@ export default function Prodotti() {
         <>
 
             <main>
-                <div className="row row-cols-1 row-cols-lg-3 g-3">
+                <div className="row row-cols-1 row-cols-lg-2 g-3">
 
                     {products.map((product) => (
                         <div key={product.id} className="col">
