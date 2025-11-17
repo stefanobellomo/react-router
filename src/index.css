@@ -41,6 +41,11 @@
     cursor: pointer;
 }
 
+.error {
+    text-align: center;
+    margin: 7rem;
+}
+
 @media screen and (max-width: 990px) {
     .description {
         display: inline;

@@ -1,10 +1,9 @@
-// import { useState } from 'react'
-// import axios from 'axios'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ChiSiamo from './pages/ChiSiamo'
 import Prodotti from './pages/Prodotti'
 import Prodotto from './pages/Prodotto'
+import Errore from './pages/Errore'
 
 import DefaultLayout from './layouts/DefaultLayout'
 
@@ -18,9 +17,10 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route path='/' element={<HomePage />}></Route>
-            <Route path='/ChiSiamo' element={<ChiSiamo />}></Route>
-            <Route path='/Prodotti' element={<Prodotti />}></Route>
-            <Route path='/Prodotti/:id' element={<Prodotto />}></Route>
+            <Route path='/chi-siamo' element={<ChiSiamo />}></Route>
+            <Route path='/prodotti' element={<Prodotti />}></Route>
+            <Route path='/errore' element={<Errore />}></Route>
+            <Route path='/prodotti/:id' element={<Prodotto />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
